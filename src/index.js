@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { ButtonToolbar, DropdownButton, Dropdown } from 'react-bootstrap';
+import { ButtonToolbar, DropdownButton, Dropdown, Button } from 'react-bootstrap';
 
 class Box extends React.Component {
   selectBox = () => {
@@ -61,24 +61,24 @@ class Buttons extends React.Component {
     return (
       <div className="center">
         <ButtonToolbar>
-          <button variant="primary" onClick={this.props.playButton}>
+          <Button variant="primary" onClick={this.props.playButton}>
             Play
-          </button>
-          <button variant="primary" onClick={this.props.pauseButton}>
+          </Button>
+          <Button variant="primary" onClick={this.props.pauseButton}>
             Pause
-          </button>
-          <button variant="primary" onClick={this.props.clear}>
+          </Button>
+          <Button variant="primary" onClick={this.props.clear}>
             Clear
-          </button>
-          <button variant="primary" onClick={this.props.slow}>
+          </Button>
+          <Button variant="primary" onClick={this.props.slow}>
             Slow
-          </button>
-          <button variant="primary" onClick={this.props.fast}>
+          </Button>
+          <Button variant="primary" onClick={this.props.fast}>
             Fast
-          </button>
-          <button variant="primary" onClick={this.props.seed}>
+          </Button>
+          <Button variant="primary" onClick={this.props.seed}>
             Seed
-          </button>
+          </Button>
           <DropdownButton
             title="Grid Size"
             id="size-menu"
